@@ -7,9 +7,6 @@
 
 void main() {
     char *inp = read_file("sample.txt");
-    printf(inp);
-
-    printf("\n%c %x %d", inp[90], inp[90], inp[90] == 0);
     // printf("\n");
     Board board = parse(inp);
     print_board(&board);

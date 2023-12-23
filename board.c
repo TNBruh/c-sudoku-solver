@@ -8,8 +8,7 @@ Board parse(char *inp) {
     int char_count = 0;
     char current_char = '*';
     Board board;
-
-    printf("NULL TERM: %d \n", inp[90]);
+    
     // exit(EXIT_FAILURE);
 
     while (current_char != 0) {
@@ -27,7 +26,6 @@ Board parse(char *inp) {
 
         for (int i = 0; i < char_count-1; i++) {
             int num = inp[i+line_count * 10] - '0';
-            printf("%d \n", num);
             board.board[line_count][i] = num;
         }
 
